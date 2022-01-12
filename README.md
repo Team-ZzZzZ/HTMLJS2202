@@ -1,2 +1,2 @@
-# HTMLJS2202
+# HTMLJS2022
 HTML Javascript Repo for class
