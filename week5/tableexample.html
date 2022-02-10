@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table, tr, td{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Example</h1>
+<table>
+    <thead>
+        <tr>
+            <td>Year</td>
+            <td>Make</td>
+            <td>Year</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1956</td>
+            <td>Ford</td>
+            <td>Thunderbird</td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>GMC</td>
+            <td>Sierra</td>
+        </tr>
+        <tr>
+            <td>1999</td>
+            <td>Audi</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2008</td>
+            <td>Suzuki</td>
+            <td>sx4</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <form action="tableformdata.html" method="GET">
+            <tr>
+                <td>Select your favorite car</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="car">Select your car here</label>
+                </td>
+                <td><input type="radio" name="car" value="1956 ford thunderbird">1956 ford thunderbird
+                    <br>
+                    <input type="radio" name="car" value="1999 Audi TT">1999 Audi TT
+                    <br>
+                    <input type="radio" name="car" value="2021 GMC Sierra">2021 gmc sierra
+                    <br>
+                    <input type="radio" name="car" value="2018 Polaris Sportsman">2018 polaris sportsman
+                    <br>
+                    <input type="radio" name="car" value="2008 Suzuki SX4">s008 suzuki sx4
+                    <br>
+                    <input type="radio" name="car" value="1985 volkswagen scirocco">1985 volkswagen sirroco</td>
+            </tr>
+            <tr>
+                <td><label for="Username">Enter your name here</label></td>
+                <td>
+                    <input type="text" name="firstname" placeholder="Enter first name" id="firstname"><br>
+                    <input type="text" name="Lastname" placeholder="Enter Last name" id="Lastname"><br>
+                </td>
+             </tr>
+        <tr>
+                <td><label for="email">Enter Email Here</label>
+            </td>
+            <td>
+                <input type="email" name="email" id="email" placeholder="Enter email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="submit">Click to submit</label>
+            </td>
+            <td>
+                <input type="submit" value="Submit form">
+            </td>
+        
+        </tr>
+        </form>
+    </tfoot>
+</table>
+
+    
+</body>
+</html>

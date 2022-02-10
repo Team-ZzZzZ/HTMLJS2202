@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+</head>
+<body>
+    <h1>Display Form Data Here</h1>
+
+    <script>
+        var querydata = window.location.search
+        console.log(querydata)
+
+        var urlParams = new URLSearchParams(querydata)
+        entries = urlParams.entries()
+var body = document.querySelector('body')
+        for(var entry of entries){
+            var p = document.createElement('p')
+            p.innerHTML = `${entry[0]}: ${entry[1]}`
+            body.appendChild(p)
+        }
+    </script>
+    
+</body>
+</html>
