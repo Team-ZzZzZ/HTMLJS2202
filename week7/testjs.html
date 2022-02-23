@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<script>
+    function add(_a, _b){
+  var sum = _a + _b
+  if(sum < 50)
+  {
+    let size = "small"
+    alert(size)
+  }
+  else
+  {
+    let size = "big"
+    alert(size)
+  }
+  
+}
+    </script>
+
+
+<p id="words">These are a bunch of words in a p tag</p>
+<script>
+    document.querySelector(`#words`).innerHTML += `<a href="http://www.google.com">This is a link</a>`
+</script>
+<form>
+    <input type="text" id="first">
+    <input type="button" id="enter-button" value="Enter">
+  </form>
+  <script>
+    document.querySelector(`#enter-button`).addEventListener(`click`, alertName)
+    function alertName(e)
+    {
+      alert(document.querySelector(`#first`).value)
+    }
+  </script>-->
+  <input type="text" id="name">
+<script>
+  var textInput = document.querySelector(`#name`)
+  textInput.addEventListener(`keyup`, function(event)
+  {
+    //the code representing the key you pressed
+    console.log(event.keyCode)
+    console.log(textInput)
+    console.log(event.target)
+    event.target.value = `Ha ha, I just changed your typing`
+  })
+</script>
+</body>
+</html>
