@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 form demo</title>
+</head>
+<body id="body">
+    <h1>Week 7 Form Demo</h1>
+    <form action="#">
+        <table>
+            <tr>
+                <td>
+                    <label for="first" class="questions">First: </label>
+                </td>
+                <td>
+                    <input type="text" name="first" id="first">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="last" class="questions">Last: </label>
+                </td>
+                <td>
+                    <input type="text" name="last" id="last">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age" class="questions">Age: </label>
+                </td>
+                <td>
+                    <input type="text" name="age" id="age">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="submit" id="enter-button">
+                </td>
+                <td>
+                   
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <br>
+    <h2>Display Info From the Form</h2>
+    <div id="info" style="border: 1px solid black; width:500px; height:200px">
+    </div>
+    <p id="one">Green</p>
+    <p id="two">Red</p>
+
+    <br>
+    <p>End of Form</p>
+    <!--In Document JavaScript Here-->
+    <script>
+        //var htmlBody = document.querySelector(`body`)
+        body.innerHTML += `<p>This content was added via JavaScript</p>`
+
+        function alertinfo(){
+            //var firstname = document.querySelector(`#first`).value
+            //var lastname = document.querySelector(`#last`).value
+            //var age = document.querySelector(`#age`).value
+            //var info = document.querySelector(`#info`)
+
+            //age = Number(age)
+
+            
+
+            info.innerHTML = `<br> Here is the information you entered <br><br>Your age : ${age.value} <br><br>Your Dog age: ${(age.value * 7).toFixed(1)} <br><br>Your cat age: ${(age.value * 4).toFixed(1)} <br><br>Your First Name: ${first.value} <br><br>Your last name: ${last.value}`
+
+        }
+
+        var enterButton = document.querySelector(`#enter-button`)
+        enterButton.addEventListener('click', alertinfo)
+
+        one.addEventListener('click', function(){one.style.color = "green"})
+        two.addEventListener('click', function(){two.style.color = "red"})
+    </script>
+
+</body>
+</html>
